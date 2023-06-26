@@ -1,0 +1,32 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 10px;
+}
+
+#logoPreview {
+  max-width: fit-content;
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+
+}
+
+.section {
+  margin-bottom: 20px;
+}
