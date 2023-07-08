@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Login_Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email_Id">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <p><i>Already a member?</i> <a href="login.html"><b>Log In</b></a></p>
+
+                    <div class="checkbox-container">
+                        <label for="admin">Admin</label>
+                        <input type="checkbox" id="admin" onchange="toggleCheckbox()">
+                        <label for="faculty">Faculty</label>
+                        <input type="checkbox" id="faculty" onchange="toggleCheckbox()">
+                    </div>
+                </div>
+
+                <div class="btn-field">
+                    <button type="button">Sign Up</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function toggleCheckbox() {
+            const adminCheckbox = document.getElementById('admin');
+            const facultyCheckbox = document.getElementById('faculty');
+
+            if (adminCheckbox.checked) {
+                facultyCheckbox.disabled = true;
+            } else {
+                facultyCheckbox.disabled = false;
+            }
+            if (facultyCheckbox.checked) {
+                adminCheckbox.disabled = true;
+            } else {
+                adminCheckbox.disabled = false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

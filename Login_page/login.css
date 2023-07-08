@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 30, 50, 0.284), rgba(0, 33, 50, 0.8)), url(background_image.jpg);
+    background-position: center;
+    position: relative;
+}
+
+.form-box {
+    width: 90%;
+    max-width: 550px;
+    position: absolute;
+    top: 50%;
+    box-shadow: 7px 6px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(245, 245, 245, 0.7);
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+
+.form-box h1 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #0c4499;
+    position: relative;
+}
+
+.input-field {
+    margin-top: 12px;
+    overflow: hidden;
+
+}
+
+input {
+    width: 93%;
+    padding: 6px;
+}
+
+form p {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+form p a {
+    text-decoration: none;
+    color: #0300a0bd;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-field button {
+    flex-basis: 48%;
+    background: #0c4499;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 2s;
+}
+
+.input-group {
+    height: 180px;
+}
+
+.btn-field button.disable {
+    background: #eaeaea;
+    color: #555;
+}
